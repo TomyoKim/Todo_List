@@ -1,6 +1,8 @@
 import "./Header.css";
+import React from "react";
 
 const Header = () => {
+    console.log('header update');
     return (
         <div className="Header">
             <h3>📅 Today</h3>
@@ -8,4 +10,4 @@ const Header = () => {
         </div>
     )
 }
-export default Header;
+export default React.memo(Header);
